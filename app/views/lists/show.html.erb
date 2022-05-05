@@ -1,0 +1,5 @@
+<ul>
+  <li><%= @list.name %></li>
+</ul>
+<%= link_to 'Back', lists_path %> |
+<%= link_to "delete list", list_path(@list), method: :delete, data:{confirm: "Are you sure?"} %>
